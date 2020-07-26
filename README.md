@@ -20,5 +20,6 @@ If you want to build:
 - Run `build.bat`
 
 **Unfortunately, the build system is currently broken**
+
 Problems:
 - cx_freeze wants to include the whole 300mb pyside2 directory. This is too much big for a distribution. I'll try to solve it some other time
