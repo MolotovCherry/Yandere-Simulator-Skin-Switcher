@@ -19,6 +19,10 @@ If you want to build:
 - `pip install cx_freeze`
 - Run `build.bat`
 
+Place your skin folders inside the skin subfolder. Make sure the images are directly underneath the skin sub-folder.
+
+Example: `root/skins/Yuno Gasai/CustomFace.png`
+
 **Unfortunately, the build system is currently broken**
 
 Problems:
