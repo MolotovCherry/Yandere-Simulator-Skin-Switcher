@@ -1,0 +1,7 @@
+<RCC>
+  <qresource>
+    <file>frameless-light.qss</file>
+    <file>frameless-dark.qss</file>
+    <file>style.qss</file>
+  </qresource>
+</RCC>

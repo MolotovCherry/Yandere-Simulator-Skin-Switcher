@@ -1,0 +1,87 @@
+#windowFrame {
+  border-radius: 5px 5px 5px 5px;
+  background-color: palette(Window);
+}
+
+#titleBar {
+  border: 0px none palette(base);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: palette(Window);
+  height: 24px;
+}
+
+#dragArea {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: palette(Midlight);
+}
+
+/* Bottom left and right corners of floating QDockWidget */
+QDockWidget > QWidget {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  background-color: palette(Window);
+}
+
+#btnClose, #btnRestore, #btnMaximize, #btnMinimize, #btnFloat, #btnCollapse, #btnUncollapse {
+  width: 11px;
+  height: 11px;
+  border-radius: 7px;
+  margin: 4px;
+}
+
+#btnRestore, #btnMaximize {
+  background: qradialgradient(cx:0.5, cy:0.5, radius: 0.6,
+                fx:0.5, fy:0.5, stop:0 #00ca56, stop:0.62 #00D058, stop:0.7 #14ae46,
+                stop:0.8 #14ae46, stop:1 rgba(255, 255, 255, 0));
+}
+
+#btnRestore::pressed, #btnMaximize::pressed {
+  background-color: #14ae46;
+}
+
+#btnMinimize {
+  background: qradialgradient(cx:0.5, cy:0.5, radius: 0.6,
+                fx:0.5, fy:0.5, stop:0 #ffbd2e, stop:0.62 #ffc42f, stop:0.7 #FCB308,
+                stop:0.8 #FCB308, stop:1 rgba(255, 255, 255, 0));
+}
+
+#btnMinimize::pressed {
+  background-color: #FCB308;
+}
+
+#btnFloat, #btnCollapse, #btnUncollapse {
+  background: qradialgradient(cx:0.5, cy:0.5, radius: 0.6,
+                fx:0.5, fy:0.5, stop:0 #4E90E6, stop:0.62 #639de9, stop:0.7 #466BC6,
+                stop:0.8 #466BC6, stop:1 rgba(255, 255, 255, 0));
+}
+
+#btnFloat::pressed, #btnCollapse::pressed, #btnUncollapse::pressed {
+  background-color: #466BC6;
+}
+
+#btnClose {
+  background: qradialgradient(cx:0.5, cy:0.5, radius: 0.6,
+                fx:0.5, fy:0.5, stop:0 #ff5e57, stop:0.60 #FF6D66, stop:0.7 #b23a34,
+                stop:0.8 #b23a34, stop:1 rgba(255, 255, 255, 0));
+}
+
+#btnClose::pressed {
+  background-color: #b23a34;
+}
+
+#btnMinimize::disabled, #btnClose::disabled,
+#btnRestore::disabled, #btnMaximize::disabled,
+#btnCollapse::disabled, #btnUncollapse::disabled {
+  background: qradialgradient(cx:0.5, cy:0.5, radius: 0.6,
+                fx:0.5, fy:0.5, stop:0 #cfcfcf, stop:0.62 #d3d3d3, stop:0.7 #B4B4B4,
+                stop:0.8 #B4B4B4, stop:1 rgba(255, 255, 255, 0));
+}

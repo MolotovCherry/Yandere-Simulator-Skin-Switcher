@@ -1,0 +1,77 @@
+#windowFrame {
+  border-radius: 5px 5px 5px 5px;
+  background-color: palette(Window);
+}
+
+#titleBar {
+  border: 0px none palette(base);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: palette(Window);
+  height: 24px;
+}
+
+#dragArea {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: palette(Midlight);
+}
+
+/* Bottom left and right corners of floating QDockWidget */
+QDockWidget > QWidget {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  background-color: palette(Window);
+}
+
+#btnClose, #btnRestore, #btnMaximize, #btnMinimize, #btnFloat, #btnCollapse, #btnUncollapse {
+  width: 11px;
+  height: 11px;
+  border-radius: 7px;
+  margin: 4px;
+}
+
+#btnRestore, #btnMaximize {
+  background-color: #00ca56;
+}
+
+#btnRestore::pressed, #btnMaximize::pressed {
+  background-color: #14ae46;
+}
+
+#btnMinimize {
+  background-color: #ffbd2e;
+}
+
+#btnMinimize::pressed {
+  background-color: #e09e3e;
+}
+
+#btnFloat, #btnCollapse, #btnUncollapse {
+  background-color: #4E90E6;
+}
+
+#btnFloat::pressed, #btnCollapse::pressed, #btnUncollapse::pressed {
+  background-color: #466BC6;
+}
+
+#btnClose {
+  background-color: #ff5e57;
+}
+
+#btnClose::pressed {
+  background-color: #b23a34;
+}
+
+#btnMinimize::disabled, #btnClose::disabled,
+#btnRestore::disabled, #btnMaximize::disabled,
+#btnCollapse::disabled, #btnUncollapse::disabled {
+  background-color: #cfcfcf;
+}
