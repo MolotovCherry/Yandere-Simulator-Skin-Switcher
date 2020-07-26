@@ -22,19 +22,19 @@ plugins_dir = qt5_plugins_dir()
 # Dependencies are automatically detected, but it might need
 # fine tuning.
 buildOptions = dict(
-    packages = ['appdirs', 'pkg_resources._vendor'],
+    packages = ['pkg_resources._vendor'],
     zip_include_packages = [ 'PySide2', 'shiboken2'], #, 'ui', 'qtmodern' ],
     includes = [
         'PySide2.QtCore', 'PySide2.QtWidgets', 'PySide2.QtGui',
         'PySide2.QtWebSockets', 'PySide2.QtNetwork', 'PySide2.QtMultimedia',
-        'PySide2.QtWinExtras', 'sys', 'json', 'datetime', 'math', 'logging',
-        'imp', 'six'
+        'PySide2.QtWinExtras', 'sys', 'json', 'datetime', 'math', 'logging', 'shiboken2.shiboken2',
+        'imp'
     ],
     excludes = [
         'unittest', 'pydoc_data', 'pyside2uic',
         'html', 'http',
         # too far?
-        '_hashlib', 'unicodedata', '_lzma', '_bz2'
+        '_hashlib', '_lzma', '_bz2'
     ],
     include_files = [
         (os.path.join(plugins_dir, 'imageformats/qico.dll'), 'imageformats/qico.dll'),
@@ -55,7 +55,8 @@ executables = [
     Executable(
         os.path.join(parent_dir, 'main.py'),
         base=base,
-        icon=os.path.join(parent_dir, 'resources/icons/app.ico')
+        icon=os.path.join(parent_dir, 'resources/icons/app.ico'),
+        targetName='Yandere Simulator Skin Switcher.exe'
     )
 ]
 
