@@ -1,3 +1,4 @@
 __pycache__
-tools/build/*
 config.ini
+tools/build
+tools/dist
