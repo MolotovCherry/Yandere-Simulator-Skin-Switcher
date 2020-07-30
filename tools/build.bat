@@ -32,8 +32,14 @@ set files[22]=PySide2\plugins\imageformats\qtga.dll
 set files[23]=PySide2\plugins\imageformats\qtiff.dll
 set files[24]=PySide2\plugins\imageformats\qwbmp.dll
 set files[25]=PySide2\plugins\imageformats\qwebp.dll
+set files[26]=PySide2\d3dcompiler_47.dll
+set files[27]=PySide2\libcrypto-1_1.dll
+set files[28]=PySide2\libEGL.dll
+set files[29]=PySide2\libGLESv2.dll
+set files[30]=PySide2\libssl-1_1.dll
+set files[31]=PySide2\opengl32sw.dll
 
-for /l %%n in (0,1,25) do ( 
+for /l %%n in (0,1,31) do ( 
    DEL /F /Q /S !files[%%n]!
 )
 
