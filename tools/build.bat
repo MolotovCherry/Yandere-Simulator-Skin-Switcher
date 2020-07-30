@@ -1,7 +1,7 @@
 @echo off
 
 rem python setup.py build_exe
-pyinstaller main.spec --clean --distpath=dist
+pyinstaller --clean --distpath=dist main.spec
 
 cd dist/Yandere Sim Skin Switcher
 
